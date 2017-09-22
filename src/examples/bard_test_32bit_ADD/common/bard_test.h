@@ -16,16 +16,16 @@
  \brief		Implementation of the millionaire problem using ABY Framework.
  */
 
-#ifndef __MILLIONAIREPROB_H_
-#define __MILLIONAIREPROB_H_
+#ifndef __BARDTEST_H_
+#define __BARDTEST_H_
 
 #include "../../../abycore/circuit/booleancircuits.h"
 #include "../../../abycore/circuit/arithmeticcircuits.h"
 #include "../../../abycore/circuit/circuit.h"
 #include "../../../abycore/aby/abyparty.h"
-#include "../../../abycore/ENCRYPTO_utils/miracl_lib/big.h"
 #include <math.h>
 #include <cassert>
+#include <fstream>
 
 #define ALICE 	"ALICE"
 #define BOB 	"BOB"
@@ -42,7 +42,7 @@
  \brief		This function is used for running a testing environment for solving the
  millionaire's problem
  */
-int32_t test_millionaire_prob_circuit(e_role role, char* address, uint16_t port, seclvl seclvl,
+int32_t test_bard_test_circuit(e_role role, char* address, uint16_t port, seclvl seclvl,
 		uint32_t nvals, uint32_t bitlen, uint32_t nthreads, e_mt_gen_alg mt_alg,
 		e_sharing sharing);
 
@@ -52,7 +52,7 @@ int32_t test_millionaire_prob_circuit(e_role role, char* address, uint16_t port,
  \param		bc	 		boolean circuit object.
  \brief		This function is used to build and solve the millionaire's problem.
  */
-share* BuildMillionaireProbCircuit(share *s_alice, share *s_bob,
+share* BuildBardTestCircuit(share *s_alice, share *s_bob,
 		BooleanCircuit *bc);
 
 

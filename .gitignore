@@ -11,3 +11,5 @@
 README.html
 docs/*
 *.dump
+.vscode/settings.json
+bin/results/*

@@ -25,6 +25,7 @@
 #include "../../../abycore/aby/abyparty.h"
 #include <math.h>
 #include <cassert>
+#include <fstream>
 
 #define ALICE 	"ALICE"
 #define BOB 	"BOB"
